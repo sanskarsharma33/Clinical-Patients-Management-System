@@ -1,0 +1,114 @@
+<head>
+    <link rel="stylesheet" href="/CSS/newCasecss.css" />
+    <!-- <link rel="stylesheet" href="newCase.js" /> -->
+    <style type="text/css">
+        body{
+            background-image: url(bg.jpg);
+        }
+        .login-form .group .input{
+            border:none;
+            padding:15px 20px;
+            border-radius:25px;
+            text-decoration: all;
+            background:rgba(255,255,255,.4);
+            
+        }
+        .login-form .group .input::placeholder ,.login-form .group .input[type="date"]{
+            color:black;
+        }
+        .login-html{
+            width: 600px;
+            height: 600px;
+            background:rgba(0,0,0, 0.6);
+            position: relative;
+            overflow: hidden;
+            top: 50%;
+            left: 50%;
+            margin-left: -350px;
+            margin-top: -350px;
+            border-radius: 8px;
+        }
+        .login-html .login-form{
+            width: 300px;
+            height: 300px;
+            min-height:345px;
+            background-position: relative;
+            perspective:1000px;
+            transform-style:preserve-3d;
+            top: 10%;
+            left: 10%;
+            margin-left: 150px;
+            margin-top: 50px;
+            border-radius: 8px;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+      <ul>
+        <li><a href="homehtml.html">HOME</a></li>
+        <!-- <li><a>PROJECT</a></li> -->
+        <li><a>ABOUT</a></li>
+        <li><a href="search.html">SEARCH PATIENTS</a></li>
+        <li><a href="newCase.html">NEW CASE</a></li>
+        <li><a >FOLLOW-UP</a></li>
+        <li><a href="GenerateCertificate.html">CERTIFICATE</a></li>
+        <li><a href="homehtml.html">LOG-IN</a></li>
+      </ul>
+    </div>
+        <div class="login-html">
+    <!-- <div class="login-wrap"> -->
+            <!-- <div class="ttl">
+                <label  class="label">ADD FOLLOW-UP</label>
+            </div> -->
+            <div class="login-form">
+                <form action="#" method="POST" id="one">
+                <!-- <div class="sign-in-htm"> -->
+                    <div class="group">
+                        <label  class="label">Patient ID</label>
+                        <input id="pid" type="text" class="input" placeholder="Patient ID">
+                    </div>
+                    <div class="group">
+                        <label class="label">Priscription</label>
+                        <textarea id="priscription" class="input" rows="5" cols="50"></textarea>
+                    </div>
+                    <div class="group">
+                        <label class="label">Note</label>
+                        <textarea id="note" class="input" rows="5" cols="50"></textarea>
+                    </div>
+                    <div class="group">
+                        <label  class="label">Next Appointment</label>
+                        <input id="nextappointment" type="date" class="input">
+                    </div>
+                    <div class="group">
+                        <button type="submit" form="one" class="button" value="add">Add</button>   
+                    </div>  
+                <!-- </div>  -->
+            </form>
+            </div>
+        <!-- </div> -->
+    </div>
+    <div class="wrapper">
+        <!-- <footer class="container1"> -->
+            <section class="footer__container">
+                <div class="footer__links">
+                    <p class="footer__title"></p>
+                    <ul class="footer__list">
+                    </ul>
+                </div>
+                <div class="footer__links">
+                    <p class="footer__title"></p>
+                    <ul class="footer__list">
+                    </ul>
+                </div>
+                <div class="footer__links">
+                    <p class="footer__title"></p>
+                    <ul class="footer__list">
+                    </ul>
+                </div> <!-- End of List -->
+            </section> <!-- End of Lists and Featured Posts -->
+        <!-- </footer> -->
+    </div>
+    
+</body>
