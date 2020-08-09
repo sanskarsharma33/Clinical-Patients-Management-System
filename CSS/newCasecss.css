@@ -410,3 +410,13 @@ ul li:hover::before {
 .footer__banner__container{
     width: 50%;
 }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}

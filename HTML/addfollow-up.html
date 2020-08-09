@@ -1,6 +1,8 @@
 <head>
     <link rel="stylesheet" href="../CSS/newCasecss.css" />
     <!-- <link rel="stylesheet" href="newCase.js" /> -->
+    <script type="text/javascript" src="../JS/addfollow-up.js"></script>
+	<script type="text/javascript" src="../JS/navbar.js"></script>
     <style type="text/css">
         body{
             background-image: url(../CSS/bg.jpg);
@@ -45,7 +47,7 @@
     
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="navbar">
       <ul>
         <li><a href="homehtml.html">HOME</a></li>
         <!-- <li><a>PROJECT</a></li> -->
@@ -64,7 +66,7 @@
                 <label  class="label">ADD FOLLOW-UP</label>
             </div> -->
             <div class="login-form">
-                <form action="#" method="POST" id="one">
+                <form action="#" name="follow"method="POST" id="one" onsubmit="return validateform()">
                 <!-- <div class="sign-in-htm"> -->
                     <div class="group">
                         <label  class="label">Patient ID</label>

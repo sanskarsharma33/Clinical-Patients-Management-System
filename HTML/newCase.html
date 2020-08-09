@@ -1,11 +1,13 @@
 <head>
     <link rel="stylesheet" href="../CSS/newCasecss.css" />
     <!-- <link rel="stylesheet" href="newCase.js" /> -->
+    <script type="text/javascript" src="../JS/navbar.js"></script>
+    <script type="text/javascript" src="../JS/case.js"></script>
     <style type="text/css">
         .login-html .login-form{
             width: 300px;
             height: 300px;
-            min-height:345px;
+            min-height:340px;
             background-position: relative;
             perspective:1000px;
             transform-style:preserve-3d;
@@ -18,7 +20,7 @@
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="navbar">
       <ul>
         <li><a href="homehtml.html">HOME</a></li>
         <!-- <li><a>PROJECT</a></li> -->
@@ -34,7 +36,7 @@
         <div class="login-html">
     <!-- <div class="login-wrap"> -->
             <div class="login-form">
-                <form action="#" method="POST" id="one">
+                <form action="#" method="POST" id="one" name="one" onsubmit="return validateform()">
                 <!-- <div class="sign-in-htm"> -->
                     <div class="group">
                         <label  class="label">Name</label>
