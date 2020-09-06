@@ -1,4 +1,10 @@
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+
     <link rel="stylesheet" href="../CSS/newCasecss.css" />
     <!-- <link rel="stylesheet" href="newCase.js" /> -->
     <script type="text/javascript" src="../JS/addfollow-up.js"></script>
@@ -7,7 +13,7 @@
         body{
             background-image: url(../CSS/bg.jpg);
         }
-        .login-form .group .input{
+        .login-form1 .group1 .input{
             border:none;
             padding:15px 20px;
             border-radius:25px;
@@ -15,10 +21,10 @@
             background:rgba(255,255,255,.4);
             
         }
-        .login-form .group .input::placeholder ,.login-form .group .input[type="date"]{
+        .login-form1 .group1 .input::placeholder ,.login-form1 .group1 .input[type="date"]{
             color:black;
         }
-        .login-html{
+        .login-html1{
             width: 600px;
             height: 600px;
             background:rgba(0,0,0, 0.6);
@@ -30,7 +36,7 @@
             margin-top: -350px;
             border-radius: 8px;
         }
-        .login-html .login-form{
+        .login-html1 .login-form1{
             width: 300px;
             height: 300px;
             min-height:345px;
@@ -47,44 +53,80 @@
     
 </head>
 <body>
-    <div class="container" id="navbar">
-      <ul>
-        <li><a href="homehtml.html">HOME</a></li>
-        <!-- <li><a>PROJECT</a></li> -->
-        <li><a>ABOUT</a></li>
-        <li><a href="search.html">SEARCH PATIENTS</a></li>
-        <li><a href="newCase.html">NEW CASE</a></li>
-        <li><a >FOLLOW-UP</a></li>
-        <li><a href="GenerateCertificate.html">CERTIFICATE</a></li>
-        <li><a href="homehtml.html">LOG-IN</a></li>
-      </ul>
-    </div>
+    <div class="my-nav">
+	<nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+		<div class="container">
+			<a class="navbar-brand" >
+			<strong>Follow-Up</strong>
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+				aria-expanded="flase" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+				</ul>	
+			<ul class="navbar-nav nav-flex-icons">
+				<li class="nav-item active">
+					<a class="nav-link" href="homehtml.html">Home
+					</a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" >
+					About
+				</a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" href="search.html" >
+					Search Patients
+				</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="newCase.html" >
+						New Case
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="addfollow-up.html" >
+						Follow-up
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="GenerateCertificate.html" >
+						Certificate
+					</a>
+				</li>
+			</ul>
+			</div>
+		</div>
+	</nav>
+	</div>
     <br>
-        <div class="login-html">
+        <div class="login-html1">
     <!-- <div class="login-wrap"> -->
             <!-- <div class="ttl">
                 <label  class="label">ADD FOLLOW-UP</label>
             </div> -->
-            <div class="login-form">
+            <div class="login-form1">
                 <form action="#" name="follow"method="POST" id="one" onsubmit="return validateform()">
                 <!-- <div class="sign-in-htm"> -->
-                    <div class="group">
+                    <div class="group1">
                         <label  class="label">Patient ID</label>
                         <input id="pid" type="text" class="input" placeholder="Patient ID">
                     </div>
-                    <div class="group">
+                    <div class="group1">
                         <label class="label">Priscription</label>
                         <textarea id="priscription" class="input" rows="5" cols="50"></textarea>
                     </div>
-                    <div class="group">
+                    <div class="group1">
                         <label class="label">Note</label>
                         <textarea id="note" class="input" rows="5" cols="50"></textarea>
                     </div>
-                    <div class="group">
+                    <div class="group1">
                         <label  class="label">Next Appointment</label>
                         <input id="nextappointment" type="date" class="input">
                     </div>
-                    <div class="group">
+                    <div class="group1">
                         <button type="submit" form="one" class="button" value="add">Add</button>   
                     </div>  
                 <!-- </div>  -->
