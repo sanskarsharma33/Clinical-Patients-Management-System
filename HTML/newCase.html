@@ -1,10 +1,16 @@
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    
     <link rel="stylesheet" href="../CSS/newCasecss.css" />
     <!-- <link rel="stylesheet" href="newCase.js" /> -->
     <script type="text/javascript" src="../JS/navbar.js"></script>
     <script type="text/javascript" src="../JS/case.js"></script>
     <style type="text/css">
-        .login-html .login-form{
+        .login-html1 .login-form1{
             width: 300px;
             height: 300px;
             min-height:340px;
@@ -20,41 +26,77 @@
     </style>
 </head>
 <body>
-    <div class="container" id="navbar">
-      <ul>
-        <li><a href="homehtml.html">HOME</a></li>
-        <!-- <li><a>PROJECT</a></li> -->
-        <li><a>ABOUT</a></li>
-        <li><a href="search.html">SEARCH PATIENTS</a></li>
-        <li><div class="active"><a href="newCase.html">NEW CASE</a></div></li>
-        <li><a href="addfollow-up.html">FOLLOW-UP</a></li>
-        <li><a href="GenerateCertificate.html">CERTIFICATE</a></li>
-        <li><a href="homehtml.html">LOG-IN</a></li>
-      </ul>
-    </div>
+    <div class="my-nav">
+	<nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+		<div class="container">
+			<a class="navbar-brand" >
+			<strong>Add New Case</strong>
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+				aria-expanded="flase" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+				</ul>	
+			<ul class="navbar-nav nav-flex-icons">
+				<li class="nav-item active">
+					<a class="nav-link" href="homehtml.html">Home
+					</a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" >
+					About
+				</a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" href="search.html" >
+					Search Patients
+				</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="newCase.html" >
+						New Case
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="addfollow-up.html" >
+						Follow-up
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="GenerateCertificate.html" >
+						Certificate
+					</a>
+				</li>
+			</ul>
+			</div>
+		</div>
+	</nav>
+	</div>
     <br>
-        <div class="login-html">
+        <div class="login-html1">
     <!-- <div class="login-wrap"> -->
-            <div class="login-form">
+            <div class="login-form1">
                 <form action="#" method="POST" id="one" name="one" onsubmit="return validateform()">
                 <!-- <div class="sign-in-htm"> -->
-                    <div class="group">
+                    <div class="group1">
                         <label  class="label">Name</label>
                         <input id="name" type="text" class="input" placeholder="Name">
                     </div>
-                    <div class="group">
+                    <div class="group1">
                         <label class="label">Patient ID</label>
                         <input id="id" type="text" class="input" placeholder="ID">
                     </div>
-                    <div class="group">
+                    <div class="group1">
                         <label class="label">Major Disease</label>
                         <input id="majordisease" type="text" class="input" placeholder="Disease">
                     </div>
-                    <div class="group">
+                    <div class="group1">
                         <label class="label">Note</label>
                         <textarea id="note" class="input" rows="5" cols="50"></textarea>
                     </div>
-                    <div class="group">
+                    <div class="group1">
                         <button type="submit" form="one" class="button" value="add">Add</button>   
                     </div>  
                 <!-- </div>  -->
