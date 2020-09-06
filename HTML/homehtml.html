@@ -1,44 +1,86 @@
 <head>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
 
 	<link rel="stylesheet" href="../CSS/homecss.css" />
 	<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,600,700' rel='stylesheet' type='text/css'>
+
 	<script type="text/javascript" src="../JS/home.js"></script>
 	<script type="text/javascript" src="../JS/navbar.js"></script>
 </head>
 <body>
-	<div class="container" id="navbar">
-      <ul>
-        <li><a>HOME</a></li>
-        <!-- <li><a>PROJECT</a></li> -->
-        <li><a>ABOUT</a></li>
-        <li><a href="search.html">SEARCH PATIENTS</a></li>
-        <li><a href="newCase.html">NEW CASE</a></li>
-        <li><a href="addfollow-up.html">FOLLOW-UP</a></li>
-        <li><a href="GenerateCertificate.html">CERTIFICATE</a></li>
-        <li><a href="homehtml.html">LOG-IN</a></li>
-      </ul>
-    </div>
+	<div class="my-nav">
+	<nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+		<div class="container">
+			<a class="navbar-brand" target="_blank">
+			<strong>My Clinic</strong>
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+				aria-expanded="flase" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+				</ul>	
+			<ul class="navbar-nav nav-flex-icons">
+				<li class="nav-item active">
+					<a class="nav-link" href="homehtml.html">Home
+					</a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" >
+					About
+				</a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" href="search.html" >
+					Search Patients
+				</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="newCase.html">
+						New Case
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="addfollow-up.html" >
+						Follow-up
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="GenerateCertificate.html" >
+						Certificate
+					</a>
+				</li>
+			</ul>
+			</div>
+		</div>
+	</nav>
+	</div>
     <br>
-	<div class="login-wrap">
-		<div class="login-html">
-			<input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
-			<input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
-			<div class="login-form">
+	<div class="login-wrap1">
+		<div class="login-html1">
+			<input id="tab-1" type="radio" name="tab" class="sign-in1" checked><label for="tab-1" class="tab">Sign In</label>
+			<input id="tab-2" type="radio" name="tab" class="sign-up1"><label for="tab-2" class="tab">Sign Up</label>
+			<div class="login-form1">
 			<form action="#" method="POST">
-				<div class="sign-in-htm">
-					<div class="group">
+				<div class="sign-in1-htm">
+					<div class="group1">
 						<label for="user" class="label">Username</label>
 						<input id="user" type="text" class="input">
 					</div>
-					<div class="group">
+					<div class="group1">
 						<label for="pass" class="label">Password</label>
 						<input id="pass" type="password" class="input" data-type="password">
 					</div>
-					<div class="group">
+					<div class="group1">
 						<input id="check" type="checkbox" class="check" checked>
 						<label for="check"><span class="icon"></span> Keep me Signed in</label>
 					</div>
-					<div class="group">
+					<div class="group1">
 						<button type="submit" class="button" value="Sign In">Sign In</button>	
 					</div>	
 					<div class="hr"></div>
@@ -48,24 +90,24 @@
 				</div>
 			</form>
 			<form action="#" name="sign" onsubmit="return validateform()">
-				<div class="sign-up-htm">
-					<div class="group">
+				<div class="sign-up1-htm">
+					<div class="group1">
 						<label for="user" class="label">Username</label>
 						<input id="user" type="text" class="input">
 					</div>
-					<div class="group">
+					<div class="group1">
 						<label for="pass" class="label">Password</label>
 						<input id="pass" type="password" class="input" data-type="password">
 					</div>
-					<div class="group">
+					<div class="group1">
 						<label for="pass" class="label">Repeat Password</label>
 						<input id="pass1" type="password" class="input" data-type="password">
 					</div>
-					<div class="group">
+					<div class="group1">
 						<label for="pass" class="label">Email Address</label>
 						<input id="email" type="text" class="input">
 					</div>
-					<div class="group">
+					<div class="group1">
 						<input type="submit" class="button" value="Sign Up" >
 					</div>
 					<div class="hr"></div>
