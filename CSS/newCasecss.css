@@ -34,6 +34,7 @@ a{color:inherit;text-decoration:none}
   background: inherit;
   position: relative;
   overflow: hidden;
+  /* background:rgba(0,0,0, 0.6); */
   /*top: 50%;*/
   /*left: 50%;*/
   /*margin-left: -50%;*/
@@ -196,4 +197,59 @@ strong{
     /* height: 8vh; */
     background-color:#1C2331
   }
+}
+
+
+#page-content {
+	flex: 1 0 auto;
+  }
+  
+#sticky-footer {
+height: 30%;
+flex-shrink: none;
+}
+.fa {
+padding: 15px;
+font-size: 30px;
+width: 60px;
+height: 60px;
+border-radius: 50%;
+text-align: center;
+text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+opacity: 0.7;
+}
+
+.fa-facebook {
+background: #3B5998;
+color: white;
+}
+.fa-linkedin {
+background: #007bb5;
+color: white;
+}
+
+.fa-youtube {
+background: #bb0000;
+color: white;
+}
+
+.fa-instagram {
+background: #125688;
+color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+background: #55ACEE;
+color: white;
+}
+.logo1{
+text-align: center;
+/* border-radius: 50%; */
+	/* align-items: center; */
+justify-content: space-around;
 }

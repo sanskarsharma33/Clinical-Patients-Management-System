@@ -4,7 +4,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
-
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../CSS/newCasecss.css" />
     <!-- <link rel="stylesheet" href="newCase.js" /> -->
     <script type="text/javascript" src="../JS/addfollow-up.js"></script>
@@ -12,6 +13,14 @@
     <style type="text/css">
         body{
             background-image: url(../CSS/bg.jpg);
+            height: 100%;
+            margin:0;
+	/*color: rgba(0,0,0,.15);*/
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            font:600 16px/18px 'Open Sans',sans-serif;
+	
         }
         .login-form1 .group1 .input{
             border:none;
@@ -26,82 +35,95 @@
         }
         .login-html1{
             width: 600px;
-            height: 600px;
-            background:rgba(0,0,0, 0.6);
+            height: 95%;
+            background: inherit;
             position: relative;
             overflow: hidden;
-            top: 50%;
-            left: 50%;
-            margin-left: -350px;
-            margin-top: -350px;
+            background:rgba(0,0,0, 0.6);
+            /*top: 50%;*/
+            /*left: 50%;*/
+            /*margin-left: -50%;*/
+            /*margin-right: -50%;*/
+            /*margin-top: -350px;*/
+            margin: auto;
             border-radius: 8px;
         }
         .login-html1 .login-form1{
             width: 300px;
-            height: 300px;
+            height: 500px;
             min-height:345px;
             background-position: relative;
             perspective:1000px;
             transform-style:preserve-3d;
-            top: 10%;
-            left: 10%;
+            /* top: 10%; */
+            /* left: 10%; */
             margin-left: 150px;
             margin-top: 50px;
             border-radius: 8px;
+        }
+        .ttmp
+        {
+            height: 90%;
         }
     </style>
     
 </head>
 <body>
     <div class="my-nav">
-	<nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
-		<div class="container">
-			<a class="navbar-brand" >
-			<strong>Follow-Up</strong>
-			</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-				aria-expanded="flase" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav mr-auto">
-				</ul>	
-			<ul class="navbar-nav nav-flex-icons">
-				<li class="nav-item active">
-					<a class="nav-link" href="homehtml.html">Home
-					</a>
-				</li>
-				<li class="nav-item">
-				<a class="nav-link" >
-					About
-				</a>
-				</li>
-				<li class="nav-item">
-				<a class="nav-link" href="search.html" >
-					Search Patients
-				</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="newCase.html" >
-						New Case
-					</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="addfollow-up.html" >
-						Follow-up
-					</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="GenerateCertificate.html" >
-						Certificate
-					</a>
-				</li>
-			</ul>
-			</div>
-		</div>
-	</nav>
-	</div>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+            <div class="container">
+                <a class="navbar-brand" target="_blank">
+                <strong>Add Followup</strong>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="flase" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                    </ul>	
+                <ul class="navbar-nav nav-flex-icons">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="landing.html">Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" >
+                        About
+                    </a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="search.html" >
+                        Search Patients
+                    </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="newCase.html">
+                            New Case
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="addfollow-up.html" >
+                            Follow-up
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="GenerateCertificate.html" >
+                            Certificate
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="homehtml.html" >
+                            Sign-in/Sign-up
+                        </a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+        </div>
     <br>
+    <div class="ttmp">
         <div class="login-html1">
     <!-- <div class="login-wrap"> -->
             <!-- <div class="ttl">
@@ -132,28 +154,23 @@
                 <!-- </div>  -->
             </form>
             </div>
-        <!-- </div> -->
+        </div>
     </div>
-    <div class="wrapper">
-        <!-- <footer class="container1"> -->
-            <section class="footer__container">
-                <div class="footer__links">
-                    <p class="footer__title"></p>
-                    <ul class="footer__list">
-                    </ul>
-                </div>
-                <div class="footer__links">
-                    <p class="footer__title"></p>
-                    <ul class="footer__list">
-                    </ul>
-                </div>
-                <div class="footer__links">
-                    <p class="footer__title"></p>
-                    <ul class="footer__list">
-                    </ul>
-                </div> <!-- End of List -->
-            </section> <!-- End of Lists and Featured Posts -->
-        <!-- </footer> -->
-    </div>
+    <div class="d-flex flex-column">
+        <footer id="sticky-footer" class="py-5 bg-light text-black-50">
+            <div class="logo1">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-instagram"></a>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="container text-center">
+                <bold>Copyright &copy; Sanskar Sharma</bold>
+            </div>
+        </footer>
+        </div>
     
 </body>

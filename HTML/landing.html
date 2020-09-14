@@ -1,0 +1,144 @@
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="../CSS/landing.css" />
+	<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,600,700' rel='stylesheet' type='text/css'>
+
+	<script type="text/javascript" src="../JS/home.js"></script>
+    <script type="text/javascript" src="../JS/navbar.js"></script>
+    <style>
+        .carousel-item {
+            height: 100vh;
+            min-height: 350px;
+            background: no-repeat center center scroll;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+        .ttmp{
+            height: 110%;
+        }
+        .display-4{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+	<div class="my-nav">
+	<nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+		<div class="container">
+			<a class="navbar-brand" target="_blank">
+			<strong>My Clinic</strong>
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+				aria-expanded="flase" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+				</ul>	
+			<ul class="navbar-nav nav-flex-icons">
+				<li class="nav-item active">
+					<a class="nav-link" href="landing.html">Home
+					</a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" >
+					About
+				</a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" href="search.html" >
+					Search Patients
+				</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="newCase.html">
+						New Case
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="addfollow-up.html" >
+						Follow-up
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="GenerateCertificate.html" >
+						Certificate
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="homehtml.html" >
+						Sign-in/Sign-up
+					</a>
+				</li>
+			</ul>
+			</div>
+		</div>
+	</nav>
+	</div>
+	<br>
+	<div class="ttmp">
+        <header>
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active" style="background: url('../CSS/loginbg.jpg'); background-size: 1700px;">
+                    <div class="carousel-caption d-none d-md-block">
+                    <h2 class="display-4">First Slide</h2>
+                    <!-- <p class="lead">This is a description for the first slide.</p> -->
+                    </div>
+                </div>
+                
+                <div class="carousel-item" style="background-image: url('../CSS/certificate.jpg') ">
+                    <div class="carousel-caption d-none d-md-block">
+                    <h2 class="display-4" style="color: black;">Second Slide</h2>
+                    <!-- <p class="lead">This is a description for the second slide.</p> -->
+                    </div>
+                </div>
+                <div class="carousel-item" style="background-image: url('../CSS/doc21.jpg')">
+                    <div class="carousel-caption d-none d-md-block">
+                    <h2 class="display-4" style="color: black;">Third  Slide</h2>
+                    <!-- <p class="lead">This is a description for the third slide.</p> -->
+                    </div>
+                </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicatos" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only" style="color: black;">Previous</span>
+                    </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only" style="color: black;">Next</span>
+                    </a>
+            </div>
+        </header>
+    </div>
+	<div class="d-flex flex-column">
+	<footer id="sticky-footer" class="py-5 bg-light text-black-50">
+		<div class="logo1">
+			<a href="#" class="fa fa-facebook"></a>
+			<a href="#" class="fa fa-twitter"></a>
+			<a href="#" class="fa fa-linkedin"></a>
+			<a href="#" class="fa fa-instagram"></a>
+		</div>
+		<br>
+		<br>
+		<br>
+		<div class="container text-center">
+			<bold>Copyright &copy; Sanskar Sharma</bold>
+		</div>
+	</footer>
+	</div>
+</body>
