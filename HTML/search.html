@@ -6,31 +6,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="../CSS/homecss.css" />
+	<link rel="stylesheet" href="../CSS/search.css" />
+	<script type="text/javascript" src="../JS/search.js"></script>
 	<script type="text/javascript" src="../JS/navbar.js"></script>
 	<style type="text/css">
-		body{
-			background-image: url('../CSS/searchbg.jpg');
-			background-size: 1550px;
-			background-position: center; 
-			background-repeat: no-repeat;
-			font-family: 'Josefin Sans', sans-serif;
-			/*font:600 16px/18px 'Open Sans',sans-serif;*/
-			color: rgb(255,255,255, .9);
-			/*color: black; */
-		}
-		/*a{color:inherit;text-decoration:none}*/
-		::placeholder {
-		  color: white;
-		  opacity: 0.9; /* Firefox */
-		}
-
-		:-ms-input-placeholder { /* Internet Explorer 10-11 */
-		 color: white;
-		}
-
-		::-ms-input-placeholder { /* Microsoft Edge */
-		 color: white;
-		}
 		input[type=text] {
 			width: 230px;
 			box-sizing: border-box;
@@ -131,9 +110,17 @@
 	<div class="txt">
 		<a> Search Patient</a>
 	</div>
-	<form>
+	<!-- <form>
 		<input type="text" name="search" placeholder="Search...." validation="false">
-	</form>
+	</form> -->
+	<div class="contain">
+		<form class="searchbox">
+			<input type="search" placeholder="Search......" name="search" class="searchbox-input" onkeyup="buttonUp();" required>
+			<input type="submit" class="searchbox-submit" value="GO">
+			<div class="searchbox-icon"><img src="../CSS/searchicon.png" alt=""></div>
+		</form>
+	</div>
+
 	<div class="result">
 	</div>
 	</div>
